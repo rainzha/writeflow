@@ -10,6 +10,9 @@
     </parent>
 
     <name>WriteFlow - Application Core</name>
+    <modules>
+        <module>domain</module>
+    </modules>
     <artifactId>writeflow-application-core</artifactId>
     <packaging>pom</packaging>
 
