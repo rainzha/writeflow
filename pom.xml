@@ -28,11 +28,13 @@
 
         <!-- Test Dependencies -->
         <junit-jupiter.version>6.0.3</junit-jupiter.version>
+        <mockito.version>5.23.0</mockito.version>
         <assertj.version>3.27.7</assertj.version>
     </properties>
 
     <modules>
         <module>architecture-kernel</module>
+        <module>application-core</module>
     </modules>
 
     <build>

@@ -9,8 +9,8 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>architecture-kernel</artifactId>
-    <name>Architecture Kernel</name>
+    <artifactId>writeflow-architecture-kernel</artifactId>
+    <name>WriteFlow - Architecture Kernel</name>
     <description>Architecture Kernel: core port definitions, Either wrappers, base domain abstractions</description>
 
     <dependencies>
