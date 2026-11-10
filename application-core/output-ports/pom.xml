@@ -11,13 +11,4 @@
 
     <name>WriteFlow - Application Core - Output Ports</name>
     <artifactId>writeflow-application-core-output-ports</artifactId>
-
-    <dependencies>
-        <!-- Domain module: ArticlePublished event + DomainEvent marker -->
-        <dependency>
-            <groupId>org.rainzha</groupId>
-            <artifactId>writeflow-application-core-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
 </project>

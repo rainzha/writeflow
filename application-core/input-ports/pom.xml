@@ -12,15 +12,6 @@
     <name>WriteFlow - Application Core - Input Ports</name>
     <artifactId>writeflow-application-core-input-ports</artifactId>
 
-    <dependencies>
-        <!-- Domain module for typed value objects (ArticleId, AuthorId) -->
-        <dependency>
-            <groupId>org.rainzha</groupId>
-            <artifactId>writeflow-application-core-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
