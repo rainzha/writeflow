@@ -12,6 +12,8 @@
     <name>WriteFlow - Application Core</name>
     <modules>
         <module>domain</module>
+        <module>input-ports</module>
+        <module>output-ports</module>
     </modules>
     <artifactId>writeflow-application-core</artifactId>
     <packaging>pom</packaging>
