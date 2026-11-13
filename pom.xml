@@ -23,7 +23,7 @@
         <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
 
-        <spring-boot.version>4.0.8</spring-boot.version>
+        <spring-boot.version>4.0.9</spring-boot.version>
         <vavr.version>0.11.0</vavr.version>
         <lombok.version>1.18.46</lombok.version>
         <slf4j.version>2.0.17</slf4j.version>
@@ -38,6 +38,7 @@
         <module>architecture-kernel</module>
         <module>application-core</module>
         <module>event-listener-adapter</module>
+        <module>persistence-adapter</module>
     </modules>
 
     <build>
