@@ -44,6 +44,7 @@
         <module>persistence-adapter</module>
         <module>notification-adapter</module>
         <module>rest-adapter</module>
+        <module>spring-boot-assembly</module>
     </modules>
 
     <build>
