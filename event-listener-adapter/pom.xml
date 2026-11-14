@@ -32,20 +32,13 @@
             <artifactId>writeflow-application-core-input-ports</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <!-- WriteFlow application-core: domain supplies the ArticlePublished event type -->
-        <dependency>
-            <groupId>org.rainzha</groupId>
-            <artifactId>writeflow-application-core-domain</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <!-- WriteFlow architecture kernel: Error type -->
+        <!-- Architecture Kernel: Contains CommandBus interface, @Adapter stereotype, Error type -->
         <dependency>
             <groupId>org.rainzha</groupId>
             <artifactId>writeflow-architecture-kernel</artifactId>
             <version>${project.version}</version>
         </dependency>
-
-        <!-- Architecture Kernel: Contains CommandBus interface, @Adapter stereotype, Error type -->
 
         <!-- Spring: @TransactionalEventListener (spring-tx) + stereotype/context -->
         <dependency>
