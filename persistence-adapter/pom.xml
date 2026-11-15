@@ -32,6 +32,11 @@
             <artifactId>writeflow-application-core-domain</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.rainzha</groupId>
+            <artifactId>writeflow-application-core-output-ports</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
         <!-- WriteFlow architecture kernel -->
         <dependency>
