@@ -47,6 +47,7 @@
         <module>spring-boot-assembly</module>
         <module>command-either-bus-spring-boot</module>
         <module>query-either-bus-spring-boot</module>
+        <module>transactional-either-spring-boot</module>
     </modules>
 
     <build>

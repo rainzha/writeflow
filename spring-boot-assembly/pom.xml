@@ -13,7 +13,6 @@
     <artifactId>writeflow-spring-boot-assembly</artifactId>
 
     <properties>
-        <transactional-either-spring-boot.version>1.0.0</transactional-either-spring-boot.version>
         <archunit-hexagonal.version>1.0.0</archunit-hexagonal.version>
 
         <!-- Skip JaCoCo coverage for this module (assembly module with architecture tests) -->
