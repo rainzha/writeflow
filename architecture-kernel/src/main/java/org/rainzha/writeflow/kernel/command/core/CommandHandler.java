@@ -9,8 +9,16 @@ import org.rainzha.writeflow.kernel.command.Command;
  * @param <E> type of error
  * @param <C> type of command
  * @author Enrique Medina Montenegro
- * @see <a href="https://martinfowler.com/bliki/CommandQuerySeparation.html">CQS – Command-Query Separation</a>
+ * @see <a href="https://martinfowler.com/bliki/CommandQuerySeparation.html">CQS - Command-Query Separation</a>
  */
 public interface CommandHandler<E, C extends Command> {
+
+    /**
+     * Handles the command.
+     *
+     * @param command command to handle
+     * @return either success, or an error if anything goes wrong
+     */
     Either<E, Void> handle(final C command);
+
 }
