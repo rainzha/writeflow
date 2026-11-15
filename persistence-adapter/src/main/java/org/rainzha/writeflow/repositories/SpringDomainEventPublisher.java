@@ -21,7 +21,7 @@ import java.util.List;
  */
 @Adapter
 @RequiredArgsConstructor
-class SpringDomainEventPublisher implements DomainEventPublisherOutputPort {
+final class SpringDomainEventPublisher implements DomainEventPublisherOutputPort {
 
     private final ApplicationEventPublisher applicationEventPublisher;
 
