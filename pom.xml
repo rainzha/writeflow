@@ -45,6 +45,8 @@
         <module>notification-adapter</module>
         <module>rest-adapter</module>
         <module>spring-boot-assembly</module>
+        <module>command-either-bus-spring-boot</module>
+        <module>query-either-bus-spring-boot</module>
     </modules>
 
     <build>
