@@ -1,0 +1,43 @@
+package org.rainzha.command.spring;
+
+import org.springframework.context.annotation.Bean;
+import io.vavr.control.Either;
+import org.rainzha.writeflow.kernel.command.Command;
+import org.rainzha.writeflow.kernel.command.core.CommandBus;
+import org.rainzha.writeflow.kernel.command.core.CommandHandler;
+
+/**
+ * Implementation of a command bus backed by Spring's registry.
+ *
+ * @author Enrique Medina Montenegro
+ */
+public class SpringCommandBus implements CommandBus {
+
+    private final Registry registry;
+
+    /**
+     * Creates a new instance with the given registry using constructor-based dependency injection.
+     *
+     * @param registry a wrapper around Spring's application context
+     */
+    public SpringCommandBus(final Registry registry) {
+        this.registry = registry;
+    }
+
+    /**
+     * Delegates the handling of the command to the corresponding {@link Bean} from Spring.
+     *
+     * @param command the command object
+     * @param <E>     the type of the error
+     * @param <C>     the type of the command
+     * @return the result of the command's execution
+     */
+    @Override
+    @SuppressWarnings("unchecked")
+    public <E, C extends Command> Either<E, Void> execute(final C command) {
+        Class<C> commandClass = (Class<C>) command.getClass();
+        CommandHandler<E, C> commandHandler = this.registry.get(commandClass);
+        return commandHandler.handle(command);
+    }
+
+}

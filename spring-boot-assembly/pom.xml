@@ -13,9 +13,6 @@
     <artifactId>writeflow-spring-boot-assembly</artifactId>
 
     <properties>
-        <!-- TODO://待实现自己的版本 -->
-        <query-either-bus-spring-boot.version>1.0.0</query-either-bus-spring-boot.version>
-        <command-either-bus-spring-boot.version>1.0.0</command-either-bus-spring-boot.version>
         <transactional-either-spring-boot.version>1.0.0</transactional-either-spring-boot.version>
         <archunit-hexagonal.version>1.0.0</archunit-hexagonal.version>
 
@@ -94,17 +91,17 @@
             <version>${project.version}</version>
         </dependency>
 
-        <!-- TODO://Architecture Kernel Spring Boot starters (bus + transactional bridge) -->
-<!--        <dependency>-->
-<!--            <groupId>io.github.emedina</groupId>-->
-<!--            <artifactId>command-either-bus-spring-boot</artifactId>-->
-<!--            <version>${command-either-bus-spring-boot.version}</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>io.github.emedina</groupId>-->
-<!--            <artifactId>query-either-bus-spring-boot</artifactId>-->
-<!--            <version>${query-either-bus-spring-boot.version}</version>-->
-<!--        </dependency>-->
+        <!-- Architecture Kernel Spring Boot starters (bus + transactional bridge) -->
+        <dependency>
+            <groupId>org.rainzha</groupId>
+            <artifactId>command-either-bus-spring-boot</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.rainzha</groupId>
+            <artifactId>query-either-bus-spring-boot</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 <!--        <dependency>-->
 <!--            <groupId>io.github.emedina</groupId>-->
 <!--            <artifactId>transactional-either-spring-boot</artifactId>-->
