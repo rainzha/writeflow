@@ -50,3 +50,6 @@ management:
 logging:
   level:
     org.rainzha.writeflow.api: TRACE
+#    org.springframework.beans.factory.support: DEBUG
+#    org.springframework.aop: DEBUG
+#    org.springframework.transaction: TRACE
