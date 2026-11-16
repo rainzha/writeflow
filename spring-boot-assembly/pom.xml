@@ -101,11 +101,11 @@
             <artifactId>query-either-bus-spring-boot</artifactId>
             <version>${project.version}</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>io.github.emedina</groupId>-->
-<!--            <artifactId>transactional-either-spring-boot</artifactId>-->
-<!--            <version>${transactional-either-spring-boot.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.rainzha</groupId>
+            <artifactId>transactional-either-spring-boot</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -120,13 +120,13 @@
             <version>${spring-boot.version}</version>
             <scope>test</scope>
         </dependency>
-<!--        TODO://待实现-->
-<!--        <dependency>-->
-<!--            <groupId>io.github.emedina</groupId>-->
-<!--            <artifactId>archunit-hexagonal</artifactId>-->
-<!--            <version>${archunit-hexagonal.version}</version>-->
-<!--            <scope>test</scope>-->
-<!--        </dependency>-->
+        <!--        TODO://待实现-->
+        <!--        <dependency>-->
+        <!--            <groupId>io.github.emedina</groupId>-->
+        <!--            <artifactId>archunit-hexagonal</artifactId>-->
+        <!--            <version>${archunit-hexagonal.version}</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
     </dependencies>
 
     <build>
