@@ -1,0 +1,91 @@
+hexagonal:
+  architecture:
+    architecture-kernel:
+      fqdns:
+        - org.rainzha.writeflow.kernel..
+      allowed-libraries:
+        - java..
+        - javax..
+        - jakarta..
+        - lombok..
+        - io.vavr..
+        - org.apache.commons..
+    domain:
+      fqdns:
+        - org.rainzha.writeflow.domain..
+      allowed-libraries:
+        - java..
+        - javax..
+        - jakarta..
+        - lombok..
+        - io.vavr..
+        - org.apache.commons..
+        - org.rainzha.writeflow.kernel..
+    output-ports:
+      fqdns:
+        - org.rainzha.writeflow.application.ports.out..
+      allowed-libraries:
+        - java..
+        - javax..
+        - jakarta..
+        - lombok..
+        - io.vavr..
+        - org.apache.commons..
+        - org.rainzha.writeflow.kernel..
+    input-ports:
+      fqdns:
+        - org.rainzha.writeflow.application.ports.in..
+      allowed-libraries:
+        - java..
+        - javax..
+        - jakarta..
+        - lombok..
+        - io.vavr..
+        - org.apache.commons..
+        - org.rainzha.writeflow.kernel..
+        - org.rainzha.writeflow.application.command..
+        - org.rainzha.writeflow.application.query..
+    command:
+      fqdns:
+        - org.rainzha.writeflow.application.command..
+      allowed-libraries:
+        - java..
+        - javax..
+        - jakarta..
+        - lombok..
+        - io.vavr..
+        - org.apache.commons..
+        - org.rainzha.writeflow.kernel..
+    query:
+      fqdns:
+        - org.rainzha.writeflow.application.query..
+      allowed-libraries:
+        - java..
+        - javax..
+        - jakarta..
+        - lombok..
+        - io.vavr..
+        - org.apache.commons..
+        - org.rainzha.writeflow.kernel..
+    handler:
+      fqdns:
+        - org.rainzha.writeflow.application
+      allowed-libraries:
+        - java..
+        - javax..
+        - jakarta..
+        - lombok..
+        - io.vavr..
+        - org.apache.commons..
+        - org.mapstruct..
+        - org.rainzha.writeflow.kernel..
+        - org.rainzha.writeflow.domain..
+        - org.rainzha.writeflow.application.ports.out..
+        - org.rainzha.writeflow.application.ports.in..
+        - org.rainzha.writeflow.application.command..
+        - org.rainzha.writeflow.application.query..
+    adapters:
+      fqdns:
+        - org.rainzha.writeflow.repositories..
+        - org.rainzha.writeflow.external..
+        - org.rainzha.writeflow.api..
